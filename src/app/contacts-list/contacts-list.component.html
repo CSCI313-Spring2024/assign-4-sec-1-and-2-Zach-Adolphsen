@@ -1,0 +1,26 @@
+<div class="mt-3">
+  <div class="row">
+    @for (contact of contacts; track contact.email) {
+    <div class="col-md-4 my-2 mx-0">
+      <div class="card card-body">
+        <h2 class="card-title">{{ contact.fName }} {{ contact.lName }}</h2>
+        <div class="card-body">
+          <p><b>Phone Number:</b> {{ contact.phoneNumber }}</p>
+          <p><b>Email Address:</b> {{ contact.email }}</p>
+          <div class="text-center">
+            <a class="btn btn-primary" [routerLink]="['update', contact.email]"
+              >Update Contact</a
+            >
+            <button
+              class="btn btn-primary mx-2 my-1"
+              (click)="onDeleteAccount(contact.email)"
+            >
+              Delete Contact
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    }
+  </div>
+</div>

@@ -1,0 +1,22 @@
+<div class="container">
+  <div class="card card-content">
+    <h2 class="card-title text-center my-2">New Contact</h2>
+    <div class="card-body">
+      <p>First Name: <input type="text" class="form-control" #fName /></p>
+      <p>Last Name: <input type="text" class="form-control" #lName /></p>
+      <p>Phone Number: <input type="text" class="form-control" #number /></p>
+      <p>Email Address: <input type="text" class="form-control" #email /></p>
+      <div id="butonDiv" class="text-center my-2">
+        <button
+          class="btn btn-primary card-button"
+          (click)="
+            onCreateContact(fName.value, lName.value, number.value, email.value)
+          "
+          routerLink=""
+        >
+          Add Contact
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,1 +1,15 @@
-<div>Hello World!</div>
+<div class="text-center">
+  <h1>Contact Manager</h1>
+  <nav>
+    <button class="btn btn-outline-primary mx-3" routerLink="/">
+      Contacts List
+    </button>
+    <button class="btn btn-outline-primary" routerLink="/NewContact">
+      Add Contact
+    </button>
+  </nav>
+  <hr class="mx-auto w-100" />
+</div>
+<div class="container">
+  <router-outlet></router-outlet>
+</div>

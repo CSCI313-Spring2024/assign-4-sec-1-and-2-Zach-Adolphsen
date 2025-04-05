@@ -1,0 +1,37 @@
+<div class="container">
+  <hr class="mx-auto w-100" />
+  <div class="card card-content">
+    <h2 class="card-title text-center my-2">Update Contact</h2>
+    <div class="card-body">
+      <p for="fName">
+        First Name: {{ contact.fName }}
+        <input type="text" id="fName" class="form-control" />
+      </p>
+      <p>
+        Last Name: {{ contact.lName }}
+        <input
+          type="text"
+          class="form-control"
+          [(ngModel)]="this.contact.lName"
+        />
+      </p>
+      <p>
+        Phone Number: {{ contact.phoneNumber }}
+        <input type="text" class="form-control" />
+      </p>
+      <p>
+        Email Address: {{ contact.email }}
+        <input
+          type="text"
+          class="form-control"
+          [(ngModel)]="this.contact.email"
+        />
+      </p>
+      <div id="butonDiv" class="text-center my-2">
+        <button class="btn btn-primary card-button" routerLink="/Contacts">
+          Update Contact
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
