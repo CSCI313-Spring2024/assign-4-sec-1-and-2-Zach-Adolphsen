@@ -4,11 +4,16 @@
     <h2 class="card-title text-center my-2">Update Contact</h2>
     <div class="card-body">
       <p for="fName">
-        First Name: {{ contact.fName }}
-        <input type="text" id="fName" class="form-control" />
+        First Name:
+        <input
+          type="text"
+          id="fName"
+          class="form-control"
+          [(ngModel)]="this.contact.fName"
+        />
       </p>
       <p>
-        Last Name: {{ contact.lName }}
+        Last Name:
         <input
           type="text"
           class="form-control"
@@ -16,11 +21,15 @@
         />
       </p>
       <p>
-        Phone Number: {{ contact.phoneNumber }}
-        <input type="text" class="form-control" />
+        Phone Number:
+        <input
+          type="text"
+          class="form-control"
+          [(ngModel)]="this.contact.phoneNumber"
+        />
       </p>
       <p>
-        Email Address: {{ contact.email }}
+        Email Address:
         <input
           type="text"
           class="form-control"

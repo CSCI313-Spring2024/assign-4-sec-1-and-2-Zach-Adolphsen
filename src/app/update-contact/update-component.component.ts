@@ -20,13 +20,4 @@ export class UpdateComponent {
   ngOnInit() {
     this.contact = this.contactService.getContactByEmail(this.email());
   }
-
-  // onUpdateContact() {
-  //   this.contactService.updateContact(
-  //     this.fName(),
-  //     this.lName(),
-  //     this.email(),
-  //     this.number()
-  //   );
-  // }
 }
